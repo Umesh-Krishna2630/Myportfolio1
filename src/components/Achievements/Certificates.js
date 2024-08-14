@@ -7,7 +7,7 @@ function Certificates() {
 
   const certificates = {
     coursera: [
-      { name: 'Cloud Computing Basics (Cloud 101)', imgSrc: '/certificates/cloud_corse.jpg' },
+      { name: 'Cloud Computing Basics (Cloud 101)', imgSrc: `${process.env.PUBLIC_URL}/certificates/cloud_corse.jpg` },
       { name: 'Machine Learning Foundations:A Case Study Approach', imgSrc: '/certificates/machine.jpg' },
       { name: 'Secure Full Stack MEAN Developer', imgSrc: '/certificates/FULL_STACK.jpg' },
       { name: 'Developing Front-End Apps with React', imgSrc: '/certificates/react.jpg' },
