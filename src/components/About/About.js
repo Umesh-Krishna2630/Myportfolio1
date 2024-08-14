@@ -3,10 +3,17 @@ import './About.css';
 
 function About() {
   return (
-    <section className="about" style={{ backgroundImage: `url('/sung.jpg')` }}>
+    <section
+      className="about"
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sung.jpg)` }}
+    >
       <h2>About Me</h2>
       <div className="profile">
-        <img src="/profile.jpg" alt="Profile" className="profile-img" />
+        <img
+          src={`${process.env.PUBLIC_URL}/profile.jpg`}
+          alt="Profile"
+          className="profile-img"
+        />
         <div className="profile-info">
           <p>
             <span>Hello! I am Umesh Krishna Rao.V, a passionate developer with a love for creating dynamic web applications.</span>
@@ -23,3 +30,4 @@ function About() {
 }
 
 export default About;
+
