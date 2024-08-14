@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #ecf0f1;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.projects {
+    padding: 8rem;
+    padding-top: 6rem; /* Prevent overlap with the header */
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Full section gradient background */
+    color: #ecf0f1; /* Light text color for better contrast against the dark background */
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    text-align: center; /* Center align the heading */
+    animation: fadeIn 0.8s ease-out;
+    color: #ecf0f1; /* Lighter color for heading to improve contrast */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%; /* Make the grid take up the full width of the section */
+    max-width: 1200px; /* Optional: Limit the maximum width of the content */
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.project-card {
+    padding: 2rem;
+    background-color: #34495e; /* Slightly lighter background for the card */
+    border-radius: 15px; /* Smoother look with increased border-radius */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Softer and more diffused shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card {
+    padding: 2rem;
+    background-color: #34495e; /* Slightly lighter background for the card */
+    border-radius: 15px; /* Increased border-radius for a smoother look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Softer and more diffused shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.projects{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+.project-card h3 {
+    font-size: 1.75rem; /* Increased font size for the project title */
+    margin-bottom: 1rem;
+    color: #ecf0f1; /* Slightly lighter text for better contrast */
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #bdc3c7;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e74c3c; /* Brighter color for the button */
+    border-radius: 8px; /* Slightly more rounded button */
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-card a:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Slightly larger translate for a more dynamic entrance */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

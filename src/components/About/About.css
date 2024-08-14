@@ -1,0 +1,107 @@
+.about {
+    position: relative;
+    padding: 4rem;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    text-align: left;
+  }
+  
+  h2 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: rgb(30, 28, 28);
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    animation: slideIn var(--transition-speed) ease-out;
+    margin-left: 20px;
+    margin-top: 80px;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-info {
+    max-width: 600px;
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+  }
+  
+  .profile-info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-info p span {
+    display: block;
+    opacity: 0;
+    animation: revealText 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes revealText {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .profile-info p span:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .profile-info p span:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .profile-info p span:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  .profile-info p span:nth-child(4) {
+    animation-delay: 2s;
+  }
+  
+  .profile-info p span:nth-child(5) {
+    animation-delay: 2.5s;
+  }
+  
+  .profile-info p span:nth-child(6) {
+    animation-delay: 3s;
+  }
+  
+  /* Add more nth-child selectors if you have more lines */
+  
